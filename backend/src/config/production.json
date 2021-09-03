@@ -1,0 +1,31 @@
+{
+  "server": {
+     "url": "",
+     "port": 8011
+  },
+  "db": {
+     "url": "mongodb://mongo:27017/my-db"
+  },
+  "security": {
+     "jwtPrivateKey": "ff5682f3gm584e3csa+324gfd",
+     "saltRounds": 10,
+     "enableHTTPS": true,
+     "key": "/security/keys/key.pem",
+     "certificate": "/security/keys/cert.pem",
+     "tokenLife": 3600
+  },
+  "swagger": {
+     "enabled": true,
+     "route": "/proxy/api-docs"
+  },
+  "log": {
+     "enabled": true,
+     "name": "",
+     "level": ""
+  },
+  "database_options": { 
+     "keepAlive": true,
+     "keepAliveInitialDelay": 300000,
+     "useNewUrlParser": true
+  }
+}

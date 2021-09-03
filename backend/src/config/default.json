@@ -1,0 +1,31 @@
+{
+  "server": {
+     "url": "localhost:3100",
+     "port": 3100
+  },
+  "db": {
+     "url": "mongodb://127.0.0.1:27017/stocks-prices-api"
+  },
+  "security": {
+     "jwtPrivateKey": "eg5mdsa32n54ofhe55l",
+     "saltRounds": 10,
+     "enableHTTPS": true,
+     "key": "/security/keys/key.pem",
+     "certificate": "/security/keys/cert.pem",
+     "tokenLife": 3600
+  },
+  "swagger": {
+     "enabled": true,
+     "route": "/api-docs"
+  },
+  "log": {
+     "enabled": true,
+     "name": "",
+     "level": ""
+  },
+  "database_options": {
+     "keepAlive": true,
+     "keepAliveInitialDelay": 300000,
+     "useNewUrlParser": true
+  }
+}
